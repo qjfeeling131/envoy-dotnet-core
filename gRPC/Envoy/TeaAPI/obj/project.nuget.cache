@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ssejmrnUvWmrrWRq8yoeLhLAWbXpjb42azzlS7muUhwkaS48O4KDcii9D6cXhkzezwhsvWRGoto2vPT9QCbz8w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pari_zhong\\pari workplace\\project\\private repository\\gRPC\\gRPC\\Envoy\\TeaAPI\\TeaAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pari_zhong\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

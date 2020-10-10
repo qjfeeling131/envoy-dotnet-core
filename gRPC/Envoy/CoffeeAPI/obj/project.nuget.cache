@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BTRBTS2e+5C3k6cfrmf+JcKEVJtsqlXm41I+UKcJxcicgQwqDDLlFoRzDIopTRZ7ecuSDhT5h4ritj8V25xFpg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pari_zhong\\pari workplace\\project\\private repository\\gRPC\\gRPC\\Envoy\\CoffeeAPI\\CoffeeAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pari_zhong\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

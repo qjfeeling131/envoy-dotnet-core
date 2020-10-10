@@ -1,0 +1,12 @@
+version: '3.4'
+
+services: 
+  coffeeapi:
+	build: CoffeAPI/
+	prots:
+		- "8080:80"
+		- "8081:443"
+	  environment:
+		ASPNETCORE_URLS:"https://*;http://*"
+		ASPNETCORE_HTTPS_PORT:"8081"
+		ASPNETCORE_ENVIRONMENT:"Development"
