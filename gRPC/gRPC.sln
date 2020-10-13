@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPCClient", "gRPCClient\gRPCClient.csproj", "{85FF710D-9058-4CD7-9576-9085EB9EE73F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Envoy", "Envoy", "{D899EAB8-360D-4EFB-9B83-74E235EBD4A8}"
+	ProjectSection(SolutionItems) = preProject
+		Envoy\docker-compose.yaml = Envoy\docker-compose.yaml
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeAPI", "Envoy\CoffeeAPI\CoffeeAPI.csproj", "{223CB898-9C55-425C-9D57-48B0FCC72A50}"
 EndProject

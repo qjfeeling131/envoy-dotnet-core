@@ -1,5 +1,12 @@
 version: '3'
 services:
+  envoygateway:
+    build: Envoy/
+    ports:
+      - "9901:9901"
+      - "10000:10000"
+    volumes:
+      - ./Envoy/envoy.yaml:/etc/envoy/envoy.yaml
   coffeeapi:
     build: CoffeeAPI/
     ports:
@@ -11,4 +18,17 @@ services:
       ASPNETCORE_ENVIRONMENT: "Development"
     volumes:
        - ${APPDATA}\Microsoft\UserSecrets\:/root/.microsoft/usersecrets
-       - ${USERPROFILE}\.aspnet\https:/root/.aspnet/https/
+       - ${USERPROFILE}\.aspnet\https:/root/.aspnet/https
+
+  teaapi:
+    build: TeaAPI/
+    ports:
+      - "8082:80"
+      - "8083:443"
+    environment:
+      ASPNETCORE_URLS: "https://*;http://*"
+      ASPNETCORE_HTTPS_PORT: "8083"
+      ASPNETCORE_ENVIRONMENT: "Development"
+    volumes:
+      - ${APPDATA}\Microsoft\UserSecrets\:/root/.microsoft/usersecrets
+      - ${USERPROFILE}\.aspnet\https:/root/.aspnet/https
