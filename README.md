@@ -10,5 +10,6 @@
   dotnet dev-certs https -ep $env:USERPROFILE\.aspnet\https\TeaAPI.pfx -p passWORD!23
 
 * Step 2: Use the certificate
-  * A. Go to the project's folder
-  * B. Run this command:  dotnet user-secrets set "Kestrel:Certificates:Development:Password" "passWORD!23"
+  * Go to the project's folder
+  * Edit the **.csproj** add the ** <UserSecretsId></UserSecretsId> ** into **<PropertyGrop>** 
+  * Run this command:  dotnet user-secrets set "Kestrel:Certificates:Development:Password" "passWORD!23"
