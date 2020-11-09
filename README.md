@@ -11,5 +11,6 @@
 
 * Step 2: Use the certificate
   * Go to the project's folder
-  * Edit the **.csproj** add the ** <UserSecretsId></UserSecretsId> ** into **<PropertyGrop>** 
+  * Edit the **.csproj** add the *UserSecretsId* , into *PropertyGrop*
+  * eg: <PropertyGroup//><UserSecretsId//>TeaAPI-{Guid}</UserSecretsId//></PropertyGroup//>,  remove **//**, when you copy this example
   * Run this command:  dotnet user-secrets set "Kestrel:Certificates:Development:Password" "passWORD!23"
