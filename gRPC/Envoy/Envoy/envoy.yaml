@@ -29,7 +29,12 @@ static_resources:
                   prefix: "/c"
                 route:
                   prefix_rewrite: "/coffee"
-                  cluster: coffee_service
+                  cluster: coffee_servic 
+              - match:
+                  prefix: "/t"
+                route:
+                  prefix_rewrite: "/tea"
+                  cluster: tea_service
           http_filters:
           - name: envoy.filters.http.router
   clusters:
@@ -47,6 +52,21 @@ static_resources:
             address:
               socket_address:
                 address: coffeeapi
+                port_value: 80
+  - name: tea_service
+    connect_timeout: 30s
+    type: LOGICAL_DNS
+    # Comment out the following line to test on v6 networks
+    dns_lookup_family: V4_ONLY
+    lb_policy: ROUND_ROBIN
+    load_assignment:
+      cluster_name: tea_service
+      endpoints:
+      - lb_endpoints:
+        - endpoint:
+            address:
+              socket_address:
+                address: teaapi
                 port_value: 80
     # transport_socket:
     #   name: envoy.transport_sockets.tls
