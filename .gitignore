@@ -403,3 +403,11 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+
+.vs
+.vscode
+*/bin
+*/obj
+.dockerignore
+.env
+.git
